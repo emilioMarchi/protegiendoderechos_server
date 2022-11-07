@@ -37,9 +37,7 @@ const formRoutes = require('./routes/formRoutes')
 const authRoutes = require('./routes/authRoutes')
 const dashboardRoutes = require('./routes/dashboardRoutes')
 // routes
-app.use('/', (req, res)=>{
-    res.send('workin')
-})
+
 app.use('/', formRoutes )
 app.use('/', authRoutes )
 app.use('/dashboard', validationToken, dashboardRoutes )
