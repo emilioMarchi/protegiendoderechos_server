@@ -37,9 +37,11 @@ const formRoutes = require('./routes/formRoutes')
 const authRoutes = require('./routes/authRoutes')
 const dashboardRoutes = require('./routes/dashboardRoutes')
 // routes
-
-app.use('/', formRoutes )
-app.use('/', authRoutes )
+app.use('/', (res, res) => {
+    res.send('workin')
+})
+app.use('/form', formRoutes )
+app.use('/auth', authRoutes )
 app.use('/dashboard', validationToken, dashboardRoutes )
 // route middlewares
 
