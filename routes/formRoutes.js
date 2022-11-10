@@ -2,10 +2,6 @@ const router = require('express').Router()
 const FormQuery = require('../mongoModels/formModel')
 const connectDb = require('../mongoConnection')
 
-router.get('/formQueryes', async (req,res) => {
-    const queryes = await FormQuery.find()
-    res.send(queryes)
-})
 
 router.post('/contact', async (req,res) => {
     try{
