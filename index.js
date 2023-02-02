@@ -17,9 +17,9 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
 let corsOptions = {
-    origin: ['https://admin.escuelademusicabarrial.ar',
+    origin: ['https://admin.protegiendoderechos.com.ar',
     'https://www.protegiendoderechos.com.ar','https://protegiendoderechos.com.ar',
-    'http://localhost:3000','http://3.83.189.41','http://ec2-3-83-189-41.compute-1.amazonaws.com'], // Reemplazar con dominio
+    'http://localhost:3000','http://170.64.168.58',], // Reemplazar con dominio
     optionsSuccessStatus: 200,
 }
 app.use(cors(corsOptions));
